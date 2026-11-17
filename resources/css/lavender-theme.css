@@ -1,0 +1,73 @@
+/* Ruang Cerita — tema lavender + kupu-kupu, bunga, awan
+   Pasang SETELAH CSS lama: <link rel="stylesheet" href=".../lavender-theme.css"> */
+
+:root {
+  --lav-50:  #F7F3FF;
+  --lav-100: #EEE6FC;
+  --lav-200: #DCCDF8;
+  --lav-300: #C4ACF0;
+  --lav-400: #A98AE4;
+  --lav-500: #8E6BD6;
+  --lav-700: #5E4B8B;
+  --lav-900: #3B2A63;
+}
+
+body {
+  position: relative;
+  color: var(--lav-700);
+  background: linear-gradient(180deg, #EFE7FF 0%, #F6F0FF 45%, #E9DDFB 100%) fixed;
+}
+
+/* Dekorasi: awan, kupu-kupu, bunga */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  background-image: url("data:image/svg+xml,%3Csvg%20xmlns=%22http://www.w3.org/2000/svg%22%20width=%22960%22%20height=%22960%22%20viewBox=%220%200%20960%20960%22%3E%3Cg%20transform=%22translate%28130%20120%29%20scale%281.2%29%22%20fill=%22%23FFFFFF%22%3E%3Cellipse%20cx=%220%22%20cy=%220%22%20rx=%2246%22%20ry=%2220%22/%3E%3Cellipse%20cx=%22-30%22%20cy=%22-8%22%20rx=%2226%22%20ry=%2220%22/%3E%3Cellipse%20cx=%226%22%20cy=%22-20%22%20rx=%2230%22%20ry=%2224%22/%3E%3Cellipse%20cx=%2238%22%20cy=%22-6%22%20rx=%2224%22%20ry=%2216%22/%3E%3C/g%3E%3Cg%20transform=%22translate%28700%20260%29%20scale%281.0%29%22%20fill=%22%23FFFFFF%22%3E%3Cellipse%20cx=%220%22%20cy=%220%22%20rx=%2246%22%20ry=%2220%22/%3E%3Cellipse%20cx=%22-30%22%20cy=%22-8%22%20rx=%2226%22%20ry=%2220%22/%3E%3Cellipse%20cx=%226%22%20cy=%22-20%22%20rx=%2230%22%20ry=%2224%22/%3E%3Cellipse%20cx=%2238%22%20cy=%22-6%22%20rx=%2224%22%20ry=%2216%22/%3E%3C/g%3E%3Cg%20transform=%22translate%28380%20560%29%20scale%280.9%29%22%20fill=%22%23FFFFFF%22%3E%3Cellipse%20cx=%220%22%20cy=%220%22%20rx=%2246%22%20ry=%2220%22/%3E%3Cellipse%20cx=%22-30%22%20cy=%22-8%22%20rx=%2226%22%20ry=%2220%22/%3E%3Cellipse%20cx=%226%22%20cy=%22-20%22%20rx=%2230%22%20ry=%2224%22/%3E%3Cellipse%20cx=%2238%22%20cy=%22-6%22%20rx=%2224%22%20ry=%2216%22/%3E%3C/g%3E%3Cg%20transform=%22translate%28820%20760%29%20scale%281.1%29%22%20fill=%22%23FFFFFF%22%3E%3Cellipse%20cx=%220%22%20cy=%220%22%20rx=%2246%22%20ry=%2220%22/%3E%3Cellipse%20cx=%22-30%22%20cy=%22-8%22%20rx=%2226%22%20ry=%2220%22/%3E%3Cellipse%20cx=%226%22%20cy=%22-20%22%20rx=%2230%22%20ry=%2224%22/%3E%3Cellipse%20cx=%2238%22%20cy=%22-6%22%20rx=%2224%22%20ry=%2216%22/%3E%3C/g%3E%3Cg%20transform=%22translate%28110%20800%29%20scale%280.8%29%22%20fill=%22%23FFFFFF%22%3E%3Cellipse%20cx=%220%22%20cy=%220%22%20rx=%2246%22%20ry=%2220%22/%3E%3Cellipse%20cx=%22-30%22%20cy=%22-8%22%20rx=%2226%22%20ry=%2220%22/%3E%3Cellipse%20cx=%226%22%20cy=%22-20%22%20rx=%2230%22%20ry=%2224%22/%3E%3Cellipse%20cx=%2238%22%20cy=%22-6%22%20rx=%2224%22%20ry=%2216%22/%3E%3C/g%3E%3Cg%20transform=%22translate%28520%20120%29%20rotate%2816%29%20scale%281.0%29%22%3E%3Cg%3E%3Cpath%20d=%22M0%200%20C6%20-30%2040%20-38%2040%20-12%20C40%206%2016%2010%200%200Z%22%20fill=%22%23C9B6F0%22/%3E%3Cpath%20d=%22M0%202%20C14%204%2030%2010%2024%2026%20C18%2038%204%2022%200%208Z%22%20fill=%22%23E4D8FA%22/%3E%3Ccircle%20cx=%2226%22%20cy=%22-14%22%20r=%224%22%20fill=%22%23fff%22%20opacity=%22.55%22/%3E%3C/g%3E%3Cg%20transform=%22scale%28-1%201%29%22%3E%3Cpath%20d=%22M0%200%20C6%20-30%2040%20-38%2040%20-12%20C40%206%2016%2010%200%200Z%22%20fill=%22%23C9B6F0%22/%3E%3Cpath%20d=%22M0%202%20C14%204%2030%2010%2024%2026%20C18%2038%204%2022%200%208Z%22%20fill=%22%23E4D8FA%22/%3E%3Ccircle%20cx=%2226%22%20cy=%22-14%22%20r=%224%22%20fill=%22%23fff%22%20opacity=%22.55%22/%3E%3C/g%3E%3Crect%20x=%22-2%22%20y=%22-12%22%20width=%224%22%20height=%2234%22%20rx=%222%22%20fill=%22%237B61A8%22/%3E%3Cpath%20d=%22M0%20-12%20Q-6%20-26%20-12%20-28%20M0%20-12%20Q6%20-26%2012%20-28%22%20stroke=%22%237B61A8%22%20stroke-width=%221.6%22%20fill=%22none%22%20stroke-linecap=%22round%22/%3E%3C/g%3E%3Cg%20transform=%22translate%28120%20430%29%20rotate%28-20%29%20scale%280.75%29%22%3E%3Cg%3E%3Cpath%20d=%22M0%200%20C6%20-30%2040%20-38%2040%20-12%20C40%206%2016%2010%200%200Z%22%20fill=%22%23D9B8EC%22/%3E%3Cpath%20d=%22M0%202%20C14%204%2030%2010%2024%2026%20C18%2038%204%2022%200%208Z%22%20fill=%22%23EEDDF7%22/%3E%3Ccircle%20cx=%2226%22%20cy=%22-14%22%20r=%224%22%20fill=%22%23fff%22%20opacity=%22.55%22/%3E%3C/g%3E%3Cg%20transform=%22scale%28-1%201%29%22%3E%3Cpath%20d=%22M0%200%20C6%20-30%2040%20-38%2040%20-12%20C40%206%2016%2010%200%200Z%22%20fill=%22%23D9B8EC%22/%3E%3Cpath%20d=%22M0%202%20C14%204%2030%2010%2024%2026%20C18%2038%204%2022%200%208Z%22%20fill=%22%23EEDDF7%22/%3E%3Ccircle%20cx=%2226%22%20cy=%22-14%22%20r=%224%22%20fill=%22%23fff%22%20opacity=%22.55%22/%3E%3C/g%3E%3Crect%20x=%22-2%22%20y=%22-12%22%20width=%224%22%20height=%2234%22%20rx=%222%22%20fill=%22%237B61A8%22/%3E%3Cpath%20d=%22M0%20-12%20Q-6%20-26%20-12%20-28%20M0%20-12%20Q6%20-26%2012%20-28%22%20stroke=%22%237B61A8%22%20stroke-width=%221.6%22%20fill=%22none%22%20stroke-linecap=%22round%22/%3E%3C/g%3E%3Cg%20transform=%22translate%28860%20500%29%20rotate%2824%29%20scale%280.8%29%22%3E%3Cg%3E%3Cpath%20d=%22M0%200%20C6%20-30%2040%20-38%2040%20-12%20C40%206%2016%2010%200%200Z%22%20fill=%22%23B9A3E8%22/%3E%3Cpath%20d=%22M0%202%20C14%204%2030%2010%2024%2026%20C18%2038%204%2022%200%208Z%22%20fill=%22%23DCCEF6%22/%3E%3Ccircle%20cx=%2226%22%20cy=%22-14%22%20r=%224%22%20fill=%22%23fff%22%20opacity=%22.55%22/%3E%3C/g%3E%3Cg%20transform=%22scale%28-1%201%29%22%3E%3Cpath%20d=%22M0%200%20C6%20-30%2040%20-38%2040%20-12%20C40%206%2016%2010%200%200Z%22%20fill=%22%23B9A3E8%22/%3E%3Cpath%20d=%22M0%202%20C14%204%2030%2010%2024%2026%20C18%2038%204%2022%200%208Z%22%20fill=%22%23DCCEF6%22/%3E%3Ccircle%20cx=%2226%22%20cy=%22-14%22%20r=%224%22%20fill=%22%23fff%22%20opacity=%22.55%22/%3E%3C/g%3E%3Crect%20x=%22-2%22%20y=%22-12%22%20width=%224%22%20height=%2234%22%20rx=%222%22%20fill=%22%237B61A8%22/%3E%3Cpath%20d=%22M0%20-12%20Q-6%20-26%20-12%20-28%20M0%20-12%20Q6%20-26%2012%20-28%22%20stroke=%22%237B61A8%22%20stroke-width=%221.6%22%20fill=%22none%22%20stroke-linecap=%22round%22/%3E%3C/g%3E%3Cg%20transform=%22translate%28600%20820%29%20rotate%28-12%29%20scale%280.65%29%22%3E%3Cg%3E%3Cpath%20d=%22M0%200%20C6%20-30%2040%20-38%2040%20-12%20C40%206%2016%2010%200%200Z%22%20fill=%22%23CDB5F2%22/%3E%3Cpath%20d=%22M0%202%20C14%204%2030%2010%2024%2026%20C18%2038%204%2022%200%208Z%22%20fill=%22%23E9DDFA%22/%3E%3Ccircle%20cx=%2226%22%20cy=%22-14%22%20r=%224%22%20fill=%22%23fff%22%20opacity=%22.55%22/%3E%3C/g%3E%3Cg%20transform=%22scale%28-1%201%29%22%3E%3Cpath%20d=%22M0%200%20C6%20-30%2040%20-38%2040%20-12%20C40%206%2016%2010%200%200Z%22%20fill=%22%23CDB5F2%22/%3E%3Cpath%20d=%22M0%202%20C14%204%2030%2010%2024%2026%20C18%2038%204%2022%200%208Z%22%20fill=%22%23E9DDFA%22/%3E%3Ccircle%20cx=%2226%22%20cy=%22-14%22%20r=%224%22%20fill=%22%23fff%22%20opacity=%22.55%22/%3E%3C/g%3E%3Crect%20x=%22-2%22%20y=%22-12%22%20width=%224%22%20height=%2234%22%20rx=%222%22%20fill=%22%237B61A8%22/%3E%3Cpath%20d=%22M0%20-12%20Q-6%20-26%20-12%20-28%20M0%20-12%20Q6%20-26%2012%20-28%22%20stroke=%22%237B61A8%22%20stroke-width=%221.6%22%20fill=%22none%22%20stroke-linecap=%22round%22/%3E%3C/g%3E%3Cg%20transform=%22translate%28330%20300%29%20scale%281.0%29%22%3E%3Cellipse%20cx=%220%22%20cy=%22-15%22%20rx=%228.5%22%20ry=%2214%22%20transform=%22rotate%280%29%22%20fill=%22%23E2D4F8%22/%3E%3Cellipse%20cx=%220%22%20cy=%22-15%22%20rx=%228.5%22%20ry=%2214%22%20transform=%22rotate%2872%29%22%20fill=%22%23E2D4F8%22/%3E%3Cellipse%20cx=%220%22%20cy=%22-15%22%20rx=%228.5%22%20ry=%2214%22%20transform=%22rotate%28144%29%22%20fill=%22%23E2D4F8%22/%3E%3Cellipse%20cx=%220%22%20cy=%22-15%22%20rx=%228.5%22%20ry=%2214%22%20transform=%22rotate%28216%29%22%20fill=%22%23E2D4F8%22/%3E%3Cellipse%20cx=%220%22%20cy=%22-15%22%20rx=%228.5%22%20ry=%2214%22%20transform=%22rotate%28288%29%22%20fill=%22%23E2D4F8%22/%3E%3Ccircle%20r=%227%22%20fill=%22%23F6D878%22/%3E%3C/g%3E%3Cg%20transform=%22translate%2860%20250%29%20scale%280.6%29%22%3E%3Cellipse%20cx=%220%22%20cy=%22-15%22%20rx=%228.5%22%20ry=%2214%22%20transform=%22rotate%280%29%22%20fill=%22%23D6C3F2%22/%3E%3Cellipse%20cx=%220%22%20cy=%22-15%22%20rx=%228.5%22%20ry=%2214%22%20transform=%22rotate%2872%29%22%20fill=%22%23D6C3F2%22/%3E%3Cellipse%20cx=%220%22%20cy=%22-15%22%20rx=%228.5%22%20ry=%2214%22%20transform=%22rotate%28144%29%22%20fill=%22%23D6C3F2%22/%3E%3Cellipse%20cx=%220%22%20cy=%22-15%22%20rx=%228.5%22%20ry=%2214%22%20transform=%22rotate%28216%29%22%20fill=%22%23D6C3F2%22/%3E%3Cellipse%20cx=%220%22%20cy=%22-15%22%20rx=%228.5%22%20ry=%2214%22%20transform=%22rotate%28288%29%22%20fill=%22%23D6C3F2%22/%3E%3Ccircle%20r=%227%22%20fill=%22%23F6D878%22/%3E%3C/g%3E%3Cg%20transform=%22translate%28760%2070%29%20scale%280.7%29%22%3E%3Cellipse%20cx=%220%22%20cy=%22-15%22%20rx=%228.5%22%20ry=%2214%22%20transform=%22rotate%280%29%22%20fill=%22%23EBDDFA%22/%3E%3Cellipse%20cx=%220%22%20cy=%22-15%22%20rx=%228.5%22%20ry=%2214%22%20transform=%22rotate%2860%29%22%20fill=%22%23EBDDFA%22/%3E%3Cellipse%20cx=%220%22%20cy=%22-15%22%20rx=%228.5%22%20ry=%2214%22%20transform=%22rotate%28120%29%22%20fill=%22%23EBDDFA%22/%3E%3Cellipse%20cx=%220%22%20cy=%22-15%22%20rx=%228.5%22%20ry=%2214%22%20transform=%22rotate%28180%29%22%20fill=%22%23EBDDFA%22/%3E%3Cellipse%20cx=%220%22%20cy=%22-15%22%20rx=%228.5%22%20ry=%2214%22%20transform=%22rotate%28240%29%22%20fill=%22%23EBDDFA%22/%3E%3Cellipse%20cx=%220%22%20cy=%22-15%22%20rx=%228.5%22%20ry=%2214%22%20transform=%22rotate%28300%29%22%20fill=%22%23EBDDFA%22/%3E%3Ccircle%20r=%227%22%20fill=%22%23F3CF6B%22/%3E%3C/g%3E%3Cg%20transform=%22translate%28480%20640%29%20scale%280.75%29%22%3E%3Cellipse%20cx=%220%22%20cy=%22-15%22%20rx=%228.5%22%20ry=%2214%22%20transform=%22rotate%280%29%22%20fill=%22%23D6C3F2%22/%3E%3Cellipse%20cx=%220%22%20cy=%22-15%22%20rx=%228.5%22%20ry=%2214%22%20transform=%22rotate%2872%29%22%20fill=%22%23D6C3F2%22/%3E%3Cellipse%20cx=%220%22%20cy=%22-15%22%20rx=%228.5%22%20ry=%2214%22%20transform=%22rotate%28144%29%22%20fill=%22%23D6C3F2%22/%3E%3Cellipse%20cx=%220%22%20cy=%22-15%22%20rx=%228.5%22%20ry=%2214%22%20transform=%22rotate%28216%29%22%20fill=%22%23D6C3F2%22/%3E%3Cellipse%20cx=%220%22%20cy=%22-15%22%20rx=%228.5%22%20ry=%2214%22%20transform=%22rotate%28288%29%22%20fill=%22%23D6C3F2%22/%3E%3Ccircle%20r=%227%22%20fill=%22%23F6D878%22/%3E%3C/g%3E%3Cg%20transform=%22translate%28900%20880%29%20scale%280.6%29%22%3E%3Cellipse%20cx=%220%22%20cy=%22-15%22%20rx=%228.5%22%20ry=%2214%22%20transform=%22rotate%280%29%22%20fill=%22%23E2D4F8%22/%3E%3Cellipse%20cx=%220%22%20cy=%22-15%22%20rx=%228.5%22%20ry=%2214%22%20transform=%22rotate%2872%29%22%20fill=%22%23E2D4F8%22/%3E%3Cellipse%20cx=%220%22%20cy=%22-15%22%20rx=%228.5%22%20ry=%2214%22%20transform=%22rotate%28144%29%22%20fill=%22%23E2D4F8%22/%3E%3Cellipse%20cx=%220%22%20cy=%22-15%22%20rx=%228.5%22%20ry=%2214%22%20transform=%22rotate%28216%29%22%20fill=%22%23E2D4F8%22/%3E%3Cellipse%20cx=%220%22%20cy=%22-15%22%20rx=%228.5%22%20ry=%2214%22%20transform=%22rotate%28288%29%22%20fill=%22%23E2D4F8%22/%3E%3Ccircle%20r=%227%22%20fill=%22%23F3CF6B%22/%3E%3C/g%3E%3Cg%20transform=%22translate%28250%20900%29%20scale%280.65%29%22%3E%3Cellipse%20cx=%220%22%20cy=%22-15%22%20rx=%228.5%22%20ry=%2214%22%20transform=%22rotate%280%29%22%20fill=%22%23EBDDFA%22/%3E%3Cellipse%20cx=%220%22%20cy=%22-15%22%20rx=%228.5%22%20ry=%2214%22%20transform=%22rotate%2860%29%22%20fill=%22%23EBDDFA%22/%3E%3Cellipse%20cx=%220%22%20cy=%22-15%22%20rx=%228.5%22%20ry=%2214%22%20transform=%22rotate%28120%29%22%20fill=%22%23EBDDFA%22/%3E%3Cellipse%20cx=%220%22%20cy=%22-15%22%20rx=%228.5%22%20ry=%2214%22%20transform=%22rotate%28180%29%22%20fill=%22%23EBDDFA%22/%3E%3Cellipse%20cx=%220%22%20cy=%22-15%22%20rx=%228.5%22%20ry=%2214%22%20transform=%22rotate%28240%29%22%20fill=%22%23EBDDFA%22/%3E%3Cellipse%20cx=%220%22%20cy=%22-15%22%20rx=%228.5%22%20ry=%2214%22%20transform=%22rotate%28300%29%22%20fill=%22%23EBDDFA%22/%3E%3Ccircle%20r=%227%22%20fill=%22%23F6D878%22/%3E%3C/g%3E%3C/svg%3E");
+  background-size: 960px 960px;
+  opacity: .7;
+}
+
+header, .navbar {
+  background: rgba(255,255,255,.72) !important;
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
+  border-bottom-color: var(--lav-100) !important;
+}
+
+h1, h2, h3, .logo, .brand { color: var(--lav-900); }
+
+.btn-primary, button[type="submit"] {
+  background: linear-gradient(135deg, var(--lav-300), var(--lav-500));
+  color: #fff;
+  border: 0;
+  box-shadow: 0 8px 20px rgba(142,107,214,.28);
+}
+.btn-primary:hover { background: var(--lav-500); }
+
+.btn-outline, .btn-secondary {
+  background: rgba(255,255,255,.7);
+  color: var(--lav-900);
+  border: 1px solid var(--lav-300);
+}
+nav a:hover { color: var(--lav-500); }
+
+.hero, .card, .step, .step-card {
+  background: rgba(255,255,255,.66) !important;
+  border: 1px solid var(--lav-200) !important;
+  box-shadow: 0 18px 50px rgba(142,107,214,.14);
+  -webkit-backdrop-filter: blur(4px);
+  backdrop-filter: blur(4px);
+}
+
+/* HP: dekorasi sedikit lebih kecil & lembut */
+@media (max-width: 640px) {
+  body::before { background-size: 640px 640px; opacity: .55; }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  body::before { animation: drift 90s linear infinite; }
+  @keyframes drift { to { background-position: 960px 960px; } }
+}
